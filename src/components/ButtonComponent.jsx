@@ -1,6 +1,6 @@
 export default function ButtonComponent ({text, color, backcolor}) {
     return (
-        <button style= {{color: color , backgroundColor: backcolor}}> {text} </button>
+        <button style= {{color: color , backgroundColor: backcolor, fontSize: '15px ' , }}> {text} </button>
     );
 
 }  

@@ -7,7 +7,6 @@ export default function NavBar() {
       <nav>
         
         <BsBuildings className="NavIcon"/>
-        <h1>Planos PG</h1>
         <ULComponent/>
         <CartComponent/>
         
