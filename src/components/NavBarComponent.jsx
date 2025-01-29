@@ -1,6 +1,6 @@
 import CartComponent from "./CartComponent";
-import ULComponent from "./ULcomponent";
-import "./navbar.css"
+import ULComponent from "./UlComponent";
+import "./NavBarComponent.css"
 import { BsBuildings } from "react-icons/bs";
 export default function NavBar() {
     return (

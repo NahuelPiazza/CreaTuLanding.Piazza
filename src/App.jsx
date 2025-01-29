@@ -1,12 +1,12 @@
 import './App.css' 
-import BannerComponent from './components/BannerComponent';
-import NavBar from './components/navbar';
+import ItemListCont from './components/itemListConteiner';
+import NavBar from './components/NavBarComponent';
 function App() {
   return (
     // <></> son los contenedores globales de toda la app
     <> 
         <NavBar/>
-        <BannerComponent greetings="bienvenido a mi E-Comerce"/>
+        <ItemListCont greetings = "hola, bienvenido a mi E-comerce"/>
     </>
   );
 }
