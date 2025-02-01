@@ -1,13 +1,21 @@
 import CartComponent from "./CartComponent";
-import ULComponent from "./UlComponent";
+import { Link } from "react-router-dom";
 import "./NavBarComponent.css"
 import { BsBuildings } from "react-icons/bs";
-export default function NavBar() {
+export default function NavBarComponent () {
     return (
       <nav>
         
-        <BsBuildings className="NavIcon"/>
-        <ULComponent/>
+        <button><Link to= "./" ><BsBuildings className="NavIcon"/></Link></button>
+        <button>
+          <Link to="./category/cabañas">Cabañas</Link>
+        </button>
+        <button>
+          <Link to="./category/modernas">Modernas</Link>
+        </button>
+        <button>
+          <Link to="./category/edificios">Edificios</Link>
+        </button>
         <CartComponent/>
         
       </nav>
