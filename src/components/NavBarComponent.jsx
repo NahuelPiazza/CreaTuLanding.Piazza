@@ -16,7 +16,12 @@ export default function NavBarComponent () {
         <button>
           <Link to="./category/edificios">Edificios</Link>
         </button>
-        <CartComponent/>
+        <button>
+          <Link to= "./Cart">
+            <CartComponent/>
+          </Link>
+        </button>
+        
         
       </nav>
     );
