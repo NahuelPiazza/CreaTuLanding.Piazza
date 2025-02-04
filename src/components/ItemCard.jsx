@@ -7,10 +7,12 @@ export default function ItemCard ({Item}) {
                     display:"flex", 
                     flexDirection:"column",
                     justifyContent:"center",
-                    gap:"15px",
+                    gap:"25px",
                     alignItems:"center",
                     border: '1px solid grey', 
-                    padding: 10 }}>
+                    padding: 10,
+                    borderStyle:"solid",
+                    }}>
 
                 <h2>{Item.title}</h2>
                 <img src={Item.image} alt={Item.title} style={{maxWidth:"250px"}}/>

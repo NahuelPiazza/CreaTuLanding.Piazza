@@ -19,9 +19,15 @@ export default function ItemListCont () {
     return (
         <>
             <h1>Vista de Home {catId}</h1>
-            {Items?.map((Item) => (
-            <ItemCard key={Item.id} Item={Item} />
-            ))}
+            <div style={{
+                display:"flex",
+                flexDirection:"column",
+                gap:"20px",
+                }}>
+                {Items?.map((Item) => (
+                <ItemCard key={Item.id} Item={Item} />
+                ))}
+            </div>
         </>
     );
 }

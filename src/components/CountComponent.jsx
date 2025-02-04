@@ -13,15 +13,31 @@ const Contador = () => {
     };
 
     return (
-        <div style={{display:"flex", flexDirection:"row", justifyContent:"center", gap:"15px", marginBottom:"15px"
+        <div style={{
+            display:"flex", 
+            flexDirection:"row", 
+            justifyContent:"center", 
+            gap:"15px", 
+            marginBottom:"15px"
         }}>
-        <div style={{display:"flex", justifyContent:"center"}} onClick={sumar}>
+        <div style={{
+            display:"flex", 
+            justifyContent:"center"
+            }} onClick={sumar}>
+                
             <button>+</button>
         </div>
 
-        <p style={{textAlign:"center", fontSize:"20px"}}>{sumador}</p>
+        <p style={{
+            textAlign:"center", 
+            fontSize:"20px"
+            }}>{sumador}</p>
 
-        <div style={{display:"flex", justifyContent:"center"}} onClick={restar}>
+        <div style={{
+            display:"flex", 
+            justifyContent:"center"
+            }} onClick={restar}>
+
             <button>-</button>
         </div>
         </div>
