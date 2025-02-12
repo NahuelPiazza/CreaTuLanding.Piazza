@@ -28,23 +28,32 @@ export default function ItemListCont () {
         <>
                 
                 { loading ? (
-                    <div style={{display: "flex", flexDirection:"column", justifyContent:"center"}}>
+                    <div style={{
+                        display: "flex", 
+                        flexDirection:"column", 
+                        justifyContent:"center", 
+                        alignItems:"center",
+                        }}>
                     <ReactLoading 
-                    type="bubbles" 
-                    color="blue" 
+                    type="cubes" 
+                    color="white" 
                     width="100px" 
                     height="50px" 
                     />
                     </div>
                 )   
-                 :
+                :
                     (
                     <section>
                         <h1>{catId}</h1>
                         <div style={{
-                        display:"flex",
-                        flexDirection:"column",
-                        gap:"20px",
+                        display:"grid",
+                        justifyContent:"center",
+                        alignItems:"center",
+                        justifyItems:"center",
+                        gridTemplateColumns:"1fr 1fr",
+                        gridTemplateRows:"1fr 1fr 1fr 1fr 1fr",
+                        gap:"2rem",
                         }}>
                         {Items?.map((Item) => (
                         <ItemCard key={Item.id} Item={Item} />

@@ -2,22 +2,28 @@ import CartComponent from "./CartComponent";
 import { Link } from "react-router-dom";
 import "./NavBarComponent.css"
 import { BsBuildings } from "react-icons/bs";
+import "./Button.css"
 export default function NavBarComponent () {
     return (
       <nav>
         
-        <button><Link to= "./" ><BsBuildings className="NavIcon"/></Link></button>
-        <button>
-          <Link to="./category/cabañas">Cabañas</Link>
+        <button className="btn-nav">
+          <Link to= "./" ><BsBuildings className="NavIcon"/></Link>
         </button>
-        <button>
-          <Link to="./category/modernas">Modernas</Link>
+
+        <button className="btn-nav">
+          <Link to="./category/cabañas" style={{color:"white"}}> Cabañas</Link>    
+            
         </button>
-        <button>
-          <Link to="./category/edificios">Edificios</Link>
+        <button className="btn-nav">
+          <Link to="./category/modernas" style={{color:"white"}} >Modernas</Link>
+        </button >
+        <button className="btn-nav">
+          <Link to="./category/edificios" style={{color:"white"}}>Edificios</Link>
         </button>
-        <button>
-          <Link to= "./Cart">
+
+        <button className="btn-nav">
+          <Link to= "./Cart" >
             <CartComponent/>
           </Link>
         </button>

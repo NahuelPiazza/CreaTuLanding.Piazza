@@ -26,7 +26,7 @@ const Items = [
 
     {
         id: 4,
-        title: 'Edificio Estilo artistico',
+        title: 'Edificio artistico',
         price: '300000usd',
         category: 'edificios',
         description: 'Edificación perfecta para exposiciones de arte y demas',
@@ -36,7 +36,7 @@ const Items = [
 
     {
         id: 5,
-        title: 'Edificio largo de 2 pisos',
+        title: 'Edificio amplio de 2 pisos',
         price: '280000usd',
         category: 'edificios',
         description: 'Edificacion de 2 pisos de altura, diseño alargado',
@@ -56,7 +56,7 @@ const Items = [
 
     {
         id: 7,
-        title: 'Casa Estilo urbana con todas las comodidades',
+        title: 'Casa Estilo urbana clasica',
         price: '150000usd',
         category: 'modernas',
         description: 'casa moderna con cochera, amplio patio y todas las comodidades',
