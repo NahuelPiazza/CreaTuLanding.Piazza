@@ -1,13 +1,14 @@
 import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { getSingleProduct } from "../firebase/firebase";
+import Contador from "./CountComponent";
 import "./ItemDetail.css"
 import { cartContext } from "../context/cartContext";
 
 export default function ItemDetail () {
     const {id,} = useParams ();
     const [item, setitem] = useState (null);
-    const [addItem] = useContext(cartContext)
+    const [cart, addItem] = useContext(cartContext)
 
 
     useEffect (()=> {
