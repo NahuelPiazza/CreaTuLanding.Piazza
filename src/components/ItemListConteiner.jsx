@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import "./ItemListConteiner.css"
+import "./ItemList.css"
 import { useParams } from "react-router-dom";
 import ItemCard from "./ItemCard";
 import { filterProductsBycategory, getItems } from "../firebase/firebase";
