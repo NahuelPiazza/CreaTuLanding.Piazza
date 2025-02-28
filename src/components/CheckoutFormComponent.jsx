@@ -1,7 +1,7 @@
 import { useState } from "react"
 import CheckComp from "./CheckoutComponent"
 import { useLocation } from "react-router-dom";
-import "./checkout.css";
+import "./Checkout.css";
 
 export default function CheckoutForm () {
 
