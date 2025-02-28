@@ -5,7 +5,8 @@ import Contador from "./CountComponent";
 import "./cartCard.css"
 
 export default function CartCard ({product, onSumadorChange}) {
-    const [deleteItem] =useContext(cartContext)
+    const [cart, setCart, deleteItem] =useContext(cartContext)
+    const [prod ,setProd] = useState (null)
     const [sumador, setSumador] = useState(1)
     
     const sumadorChange = (valorActualizado) => {
