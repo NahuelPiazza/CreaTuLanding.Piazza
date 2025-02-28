@@ -7,7 +7,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { useContext } from "react";
 import { cartContext } from "../context/cartContext";
 export default function NavBarComponent () {
-  const [cart, setcart] = useContext(cartContext)
+  const [cart] = useContext(cartContext)
     return (
       <nav>
         

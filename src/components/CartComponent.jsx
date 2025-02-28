@@ -6,8 +6,7 @@ import {Link} from "react-router-dom"
 
 export default function CartComponent () {
     const [quantity, setQuantity] = useState({})
-    const [cart, setCart] = useContext(cartContext)
-    const [sumador, setSumador] = useState(1)
+    const [cart] = useContext(cartContext)
 
     const calcularTotal = () => {
         return cart.reduce((total, prod) => {

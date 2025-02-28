@@ -9,8 +9,6 @@ import {
   query,
   where,
   addDoc,
-  updateDoc,
-  writeBatch,
 } from 'firebase/firestore';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -29,7 +27,6 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app)
 //  obtiene la base de datos del firestore y la aloja en la constante db
-
 
 //obtener un producto
 export async function getSingleProduct(id) {
@@ -56,7 +53,6 @@ export async function getSingleProduct(id) {
     throw new Error(`No se pudo obtener el producto: ${error.message}`);
   }
 }
-  
 
 //obtener toda una coleccion
 export async function getItems() {
@@ -105,8 +101,6 @@ export async function filterProductsBycategory(category) {
   }
 }
 
-
-
 // //agregar una nueva orden de pedido
 // //order parametro grande con datos del comprador y productos
 export async function addOrder(order) {
@@ -118,43 +112,3 @@ export async function addOrder(order) {
     console.error('Error al agregar el documento nuevo ', error);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-// //actualizar un producto
-// export async function updateProduct(id, toUpdate) {
-//   const itemDocRef = doc(db, 'products', id);
-//   try {
-//     await updateDoc(itemDocRef, toUpdate);
-//     alert('Se actualizo el producto!');
-//   } catch (error) {
-//     console.log('Hubo un error al actualizar!', error);
-//   }
-// }
-
-// //actualizar multiples productos
-// export async function updateMultiple() {
-//   const batch = writeBatch(db); //creando el batch
-
-//   const docRef1 = doc(db, 'products', 'ZjkF4RdijYUaR3gseS30');
-//   const docRef2 = doc(db, 'orders', '0Nu9HbjYKc7hmS67nNzd');
-
-//   batch.update(docRef1, { description: 'usb Logitech' });
-//   batch.update(docRef2, { total: 1212 });
-
-//   try {
-//     await batch.commit(); //ejecuta todas las actualizaciones juntas
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-
-//investigar como eliminar productos y/o ordenes de pedido.

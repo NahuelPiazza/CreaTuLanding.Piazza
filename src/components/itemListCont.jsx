@@ -2,12 +2,13 @@ import {useEffect, useState } from "react";
 import "./ItemList.css"
 import { useParams } from "react-router-dom";
 import ItemCard from "./ItemCard";
-import { filterProductsBycategory, getItems } from "../firebase/firebase";
+import {filterProductsBycategory, getItems } from "../firebase/firebase";
 
 import ReactLoading from "react-loading"
 
 
 export default function ItemListCont () {
+  
     const [myProds,setMyProds] = useState ([])
     const [loading,setLoading] = useState (true)
     const {catId} = useParams()

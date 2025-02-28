@@ -5,7 +5,7 @@ import { cartContext } from "../context/cartContext";
 
 export default function CheckComp ({total, cantidad, products, formData}) {
     const [orderId, setOrderId] = useState(null)
-    const [cart, addItem, deleteItem, clearCart] = useContext(cartContext);
+    const [clearCart] = useContext(cartContext);
 
 
     const handleClick = () => {
