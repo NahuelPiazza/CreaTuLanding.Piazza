@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import "./ItemList.css"
 import { useParams } from "react-router-dom";
 import ItemCard from "./ItemCard";
