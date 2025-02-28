@@ -1,9 +1,9 @@
 import { useState } from "react"
 import CheckComp from "./CheckoutComponent"
 import { useLocation } from "react-router-dom";
-import "./checkoutForm.css";
+import "./checkout.css";
 
-export default function CheckoutForm() {
+export default function CheckoutForm () {
 
     const [formData, setFormData] = useState({ name: '', email: '', number: '' });
     const [showCheckout, setShowCheckout] = useState(false);
