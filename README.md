@@ -22,7 +22,7 @@ El precio que figura es del plano más la mano de obra. La idea es que, al coloc
 
 ### Proyecto 
 
-[PlanosPG](aca link)
+
 
 ## Vistas
 
