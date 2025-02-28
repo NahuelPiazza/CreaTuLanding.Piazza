@@ -1,3 +1,4 @@
+/* paleta https://coolors.co/cad2c5-84a98c-52796f-354f52-2f3e46 */
 .Card-ctn {
     /* --bg-card: #27272a;
     --primary: #6d28d9;
@@ -12,11 +13,11 @@
     flex-direction: column;
     gap: 0.85rem;
     padding: 1rem;
-    width: 16rem;
-    height: 18rem;
+    width: 20rem;
+    height: 20rem;
     background-color: var(--bg-card);
     box-shadow: 0px 0px 6px #84A98C;
-  
+    margin-top: 10px;
     border-radius: 1rem;
 }
 
@@ -28,7 +29,7 @@
     z-index: 5;
   
     width: 100%;
-    height: 8rem;
+    height: 11rem;
     background-color: var(--primary-800);
   
     border-radius: 0.5rem;
@@ -45,7 +46,7 @@
 }
 
 .title {
-    overflow: clip;
+    
 
   width: 100%;
 
@@ -53,7 +54,7 @@
   font-weight: 600;
   color: var(--light);
   text-transform: capitalize;
-  text-wrap: nowrap;
+  
   text-overflow: ellipsis;
 }
 
@@ -72,7 +73,7 @@
   font-size: 0.75rem;
   font-weight: 500;
   color: white;
-  text-wrap: nowrap;
+  
 
   border: 2px solid #84A98C;
   border-radius: 0.5rem;
@@ -81,6 +82,14 @@
 }
 
 .CartButton:hover {
-    border: 2px solid #354F52;
+    border: 3px solid #84A98C;
     font-size: 0.95rem;
+    box-shadow: 0px 0px 7px #84A98C;
+    text-shadow:0px 0px 8px #90ffde;
+    color: #ffffff;
+}
+
+h1 {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
 }

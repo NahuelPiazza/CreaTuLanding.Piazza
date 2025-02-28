@@ -2,8 +2,12 @@ import CartComponent from "./CartComponent";
 import { Link } from "react-router-dom";
 import "./NavBarComponent.css"
 import { BsBuildings } from "react-icons/bs";
-import "./Button.css"
+
+import { FaShoppingCart } from "react-icons/fa";
+import { useContext } from "react";
+import { cartContext } from "../context/cartContext";
 export default function NavBarComponent () {
+  const [cart, setcart] = useContext(cartContext)
     return (
       <nav>
         
@@ -21,10 +25,10 @@ export default function NavBarComponent () {
         <button className="btn-nav">
           <Link to="./category/edificios" style={{color:"white"}}>Edificios</Link>
         </button>
-
+        
         <button className="btn-nav">
           <Link to= "./Cart" >
-            <CartComponent/>
+            <p><FaShoppingCart/>  {cart.length} </p>
           </Link>
         </button>
         

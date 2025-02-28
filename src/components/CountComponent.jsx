@@ -1,16 +1,30 @@
 import React, { useState } from 'react';
 
-const Contador = () => {
+const Contador = ({newValue}) => {
     const [sumador, setSumador] = useState(0);
-    const stock = 9; //lo tengo que pasar por props al min y max
+    const stock = 4; 
 
     const sumar = () => {
-        sumador < stock ? setSumador(sumador + 1) : null;
+
+        if (sumador < stock ) {
+            const nuevoSumador = sumador + 1;
+            setSumador(nuevoSumador);
+            newValue(nuevoSumador);
+        };
+        
     };
 
     const restar = () => {
-        sumador > 0 ? setSumador(sumador - 1) : null;
+
+        if (sumador > 0) {
+            const nuevoSumador = sumador - 1;
+            setSumador(nuevoSumador);
+            newValue(nuevoSumador);
+        }
+        
     };
+
+    
 
     return (
         <div style={{
@@ -22,10 +36,14 @@ const Contador = () => {
         }}>
         <div style={{
             display:"flex", 
-            justifyContent:"center"
+            justifyContent:"center",
+            alignItems: "center",
             }} onClick={sumar}>
                 
-            <button>+</button>
+            <button style={{
+                width:"4rem",
+                backgroundColor:" rgba(0, 118, 79, 0)",
+                color:"green",}}>+</button>
         </div>
 
         <p style={{
@@ -35,10 +53,15 @@ const Contador = () => {
 
         <div style={{
             display:"flex", 
-            justifyContent:"center"
+            justifyContent:"center",
+            alignItems: "center",
+            
             }} onClick={restar}>
 
-            <button>-</button>
+            <button style={{
+                width:"4rem",
+                backgroundColor:" rgba(0, 118, 79, 0)",
+                color:"green",}}>-</button>
         </div>
         </div>
     );
