@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Contador = ({newValue}) => {
-    const [sumador, setSumador] = useState(0);
+    const [sumador, setSumador] = useState(1);
     const stock = 4; 
 
     const sumar = () => {

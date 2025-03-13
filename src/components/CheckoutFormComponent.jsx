@@ -15,7 +15,7 @@ export default function CheckoutForm () {
     };
     
     const location = useLocation()
-    const info = location.state;
+    const {info} = location.state;
 
     const handleSubmit = (e) => {
     e.preventDefault();
@@ -66,12 +66,14 @@ export default function CheckoutForm () {
                 <label htmlFor="number">numero:   </label>
                 <input 
                     type="number" 
-                    placeholder="numero de telefono"
+                    placeholder="1177778888"
                     id="number" 
                     name="number" 
                     value={formData.number}
                     className="inputstyle"
                     onChange={handleChange} 
+                    min={1100000000}
+                    max={1199999999}
                     required 
                 />
             </div>
